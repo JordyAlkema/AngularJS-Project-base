@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS Project base</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/master.css" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" charset="utf-8">
+
+    <!-- Libs -->
+    <script type="text/javascript" src="assets/libs/JQuery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/libs/AngularJS/angular.min.js"></script>
+    <script type="text/javascript" src="assets/libs/AngularJS/angular-route.min.js"></script>
+    <script type="text/javascript" src="assets/libs/Bootstrap/bootstrap.min.js"></script>
+
+    <!-- AngularJS -->
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/app.routing.js"></script>
+
+      <!-- Controllers -->
+      <script type="text/javascript" src="app/shared/main/mainController.js"></script>
+      <script type="text/javascript" src="app/components/home/homeController.js"></script>
+
+      <!-- Directives -->
+      <script type="text/javascript" src="app/shared/menu/menuDirective.js"></script>
+
+      <!-- Services -->
+
+  </head>
+  <body ng-app="app" ng-controller="mainController">
+
+    <div menu></div>
+    <div ng-view></div>
+
+  </body>
+</html>
